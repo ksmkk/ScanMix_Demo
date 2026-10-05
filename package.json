@@ -1,0 +1,18 @@
+{
+  "name": "scanmix-demo",
+  "version": "1.0.0",
+  "description": "Repositorio intencionalmente poco saludable para probar DevGotchi",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --coverage",
+    "lint": "eslint src tests"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "eslint": "8.57.0"
+  }
+}
