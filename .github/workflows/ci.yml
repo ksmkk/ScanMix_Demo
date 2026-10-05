@@ -1,0 +1,27 @@
+name: Intentionally Unhealthy CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm install
+
+      - name: Run tests with coverage
+        run: npm test
+
+      - name: Intentional failing health gate
+        run: |
+          echo "This failure is intentional for the DevGotchi demo."
+          exit 1
