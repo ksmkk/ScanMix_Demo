@@ -10,6 +10,7 @@ Su objetivo es presentar múltiples señales de mala salud técnica de forma int
 - Configuración insegura de demostración.
 - Ausencia intencional de `.gitignore`.
 - Dependencias antiguas de demostración.
+- IaC ficticia con un bucket público en `infra/insecure-demo.tf` (sin provider ni despliegue).
 
 > No usar en producción ni desplegar públicamente.
 
